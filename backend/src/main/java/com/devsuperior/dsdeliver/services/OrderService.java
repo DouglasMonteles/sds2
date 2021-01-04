@@ -1,7 +1,6 @@
 package com.devsuperior.dsdeliver.services;
 
 import java.time.Instant;
-import java.time.ZoneId;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -45,6 +44,15 @@ public class OrderService {
 			Product product = productRepository.getOne(prod.getId()); // Não vai no db, ele cria um entidade gerenciada pelo jpa, sendo salva tbm as associacoes ao salvar a order
 			order.getProducts().add(product);
 		}
+		
+		order = repository.save(order);
+		return new OrderDTO(order);
+	}
+	
+	@Transactional
+	public OrderDTO setDelivered(Long id) {
+		Order order = repository.getOne(id);
+		order.setStatus(OrderStatus.DELIVERED);
 		
 		order = repository.save(order);
 		return new OrderDTO(order);
