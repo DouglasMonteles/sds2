@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { ReactComponent as Logo } from '../assets/logo.svg';
 import './styles.css';
@@ -8,7 +9,7 @@ function Navbar() {
   return (
     <nav className="main-navbar">
       <Logo />
-      <a className="logo-text">DS Delivery</a>
+      <Link to="/" className="logo-text">DS Delivery</Link>
     </nav>
   );
 }
