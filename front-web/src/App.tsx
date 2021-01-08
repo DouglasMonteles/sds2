@@ -1,12 +1,18 @@
 import React from 'react';
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import Routes from './Router';
 
 import './App.css';
 
 function App() {
   return (
-    <Routes />
+    <>
+      <Routes />
+      <ToastContainer />
+    </>
   );
 }
 
