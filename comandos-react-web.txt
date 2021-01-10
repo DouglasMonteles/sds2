@@ -13,3 +13,5 @@
 -> npm i react-select
 
 -> npm i -D @types/react-select
+
+-> npm i --save react-toastify
