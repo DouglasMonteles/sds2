@@ -1,0 +1,54 @@
+#  APLICAÇÃO WEB (ReactJS)
+
+-> npx create-react-app front-web --template typescript --use-npm
+
+-> npm install react-router-dom 
+
+-> npm i -D @types/react-router-dom
+
+-> npm i axios -D @types/axios
+
+-> npm i leaflet react-leaflet
+
+-> npm install -D @types/leaflet
+
+-> npm i react-select
+
+-> npm i -D @types/react-select
+
+-> npm i --save react-toastify
+
+------------------------------------------------------------------
+
+#  APLICAÇÃO MOBILE (React Native)
+
+-> npm install --global expo-cli
+
+-> expo init front-mobile -t expo-template-blank-typescript --npm
+
+-> rm -rf .git
+
+-> expo install @react-navigation/stack @react-native-community/masked-view react-native-screens react-native-gesture-handler @react-navigation/native expo-app-loading @expo-google-fonts/open-sans expo-font
+
+URL do Google Maps
+
+https://www.google.com/maps/dir/?api=1&travelmode=driving&dir_action=navigate&destination=${order.latitude},${order.longitude}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
