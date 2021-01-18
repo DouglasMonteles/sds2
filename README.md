@@ -13,9 +13,6 @@ A aplicação consiste em no registro de pedidos pela versão web do sistema e, 
 
 https://www.figma.com/file/BMIYHhdtpAXQgAPPDWLi18/DSDeliver05?node-id=0%3A1
 
-## Modelo conceitual
-![Modelo Conceitual](https://github.com/acenelio/assets/raw/main/sds1/modelo-conceitual.png)
-
 # Tecnologias utilizadas
 ## Back end
 - Java
